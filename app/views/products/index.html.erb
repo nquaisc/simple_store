@@ -30,6 +30,12 @@
 
 <br>
 
+<p>There are <%= @products.count %> unique products in the database</p>
+<p>The average price of our products is $<%= @products.average(:price) %> </p>
+<p>The overall quantity of all our stock is <%= @products.sum(:stock_quantity) %></p>
+
+
+
 <% 100.times do%>
 <p>"Chunky Bacon"</p>
 <% end %>
